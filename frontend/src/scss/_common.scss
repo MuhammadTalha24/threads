@@ -1,0 +1,163 @@
+a {
+    color: inherit;
+}
+
+.thread-logo {
+    img {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+.avatar-pic {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.icon-container {
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: gray;
+        transition: background-color 0.3ms ease-in
+    }
+}
+
+.post-image {
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.nav-pills {
+    .nav-link {
+        background-color: transparent;
+        color: inherit;
+        font-weight: 500 !important;
+    }
+
+
+}
+
+.vr-height {
+    min-height: 480px;
+}
+
+.post-pic {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+
+}
+
+.comment-pic {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+
+}
+
+.line-clamp {
+    display: -webkit-box;
+    /* This is necessary for line clamping */
+    -webkit-box-orient: vertical;
+    /* Specifies that the text should be oriented vertically */
+    overflow: hidden;
+    /* Ensures that overflowing content is hidden */
+    text-overflow: ellipsis;
+    /* Adds an ellipsis (...) to indicate more content */
+    -webkit-line-clamp: 4;
+}
+
+.actions {
+    svg {
+        cursor: pointer;
+    }
+}
+
+.comment-detail-pic {
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.post-detail-img {
+    width: 100%;
+    height: 550px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: hsl(0, 0%, 30%);
+}
+
+@media screen and (max-width:768px) {
+    .avatar-pic {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .post-image {
+        width: 100%;
+        height: 250px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .vr-height {
+        min-height: 250px;
+    }
+
+    .post-detail-img {
+        width: 100%;
+        height: 250px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1190px) {
+    .post-image {
+        width: 100%;
+        height: 450px;
+
+        img {
+            height: 100%;
+        }
+    }
+
+    .vr-height {
+        min-height: 450px;
+    }
+
+    .post-detail-img {
+        width: 100%;
+        height: 350px;
+
+        img {
+            height: 100%;
+        }
+    }
+}
+
+
+@media screen and (max-width) {}
